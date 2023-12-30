@@ -1,51 +1,19 @@
 # project-analisis-data-python
+#Instal berbagai library yang digunakan dengan beberapa perintah berikut.
 
-Tutorial streamlit
+conda activate main-ds
+pip install streamlit babel
 
-Impor Perpustakaan:
+#Menyiapkan DataFrame
 
-ular piton
-
-Salin kode
-import streamlit as st
-
-import ssl 
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-Skrip
+import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
+from babel.numbers import format_currency
+sns.set(style='dark')
 
-Memuat Data:
+#Membuat Komponen Filter
+#Melengkapi Dashboard dengan Berbagai Visualisasi Data
 
-Salin kode
-@st.cache_resource
-def load_data():
-    data = pd.read_csv(
-  
-"Bike-sharing-dataset/hour.csv")
-    return data
-
-data = load_data()
-Fungsi load_datadigunakan untuk memst.cache_resourceuntuk meningkatkan kinerja.
-
-Judul Dasbor dan Bilah Sisi:
-
-Skrip menetapkan judul dashboard
-Membuat dan menampilkan informasi di sidebar seperti nam
-Memberikan opsi untuk menang
-Visualisasi:
-
-Membuat dua kolomst.columns.
-Visualisasi
-Visualisasi
-Visu
-Tentang Bagian:
-
-Laki-laki
-Jalankan Dasbor:
-
-Untuk menjalankan dstreamlit runpada terminal, terpisah
-Arduino
-
-Salin kode
 streamlit run dashboard_bike_sharing.py
