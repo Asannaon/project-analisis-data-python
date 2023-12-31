@@ -2,6 +2,7 @@
 # Instal berbagai library yang digunakan dengan beberapa perintah berikut.
 
 conda activate main-ds
+
 pip install streamlit babel
 
 # Menyiapkan DataFrame
