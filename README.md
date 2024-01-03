@@ -31,9 +31,9 @@ Dengan mengimpor library-library tersebut, Anda dapat memanfaatkan fungsionalita
 # setup environment Streamlit
 # Instal berbagai library yang digunakan dengan beberapa perintah berikut.
 
+conda create --name main-ds python=3.12.1
 conda activate main-ds
-
-pip install streamlit babel
+pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 
 # Menyiapkan DataFrame
 
